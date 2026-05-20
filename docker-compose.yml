@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    container_name: book-library-api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/app

@@ -1,10 +1,31 @@
 # 📚 Book Library API (Go, net/http)
 
-A lightweight REST API for managing a book library, built in **pure Go** using only the standard library (`net/http`).  
+A lightweight REST API for managing a book library, built in **pure Go** using only the standard library (`net/http`).
 The project focuses on understanding core backend concepts such as routing, middleware, concurrency, and authentication without relying on external frameworks.
 
 ---
+## Tasks
 
+Phase 1 — Base Server
+- [ ] Basic HTTP server using net/http
+- [ ] Routing (GET, POST, PUT, DELETE)
+- [ ] JSON responses
+- [ ] CRUD for books (in-memory storage)
+
+Phase 3 — Concurrency layer
+- [ ] sync.RWMutex for safe in-memory access
+- [ ] Goroutines for background tasks
+
+Phase 3 — authentication:
+- [ ] User registration and login
+- [ ] JWT token-based auth
+- [ ] Middleware implementation
+
+Phase 4 — final:
+- [ ] Input validation
+- [ ] Dockerization
+
+---
 ## 🚀 Features
 
 - User authentication (register/login)

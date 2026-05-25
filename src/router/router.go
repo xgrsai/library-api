@@ -7,5 +7,5 @@ import (
 
 func Setup() {
     http.HandleFunc("/", handlers.PrintMsg)
-    http.HandleFunc("/books", handlers.GetBooks)
+    http.HandleFunc("/books", handlers.HandleEndpoint)
 }

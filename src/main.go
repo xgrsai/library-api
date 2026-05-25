@@ -3,15 +3,11 @@ package main
 import (
     "fmt"
     "net/http"
+    "library-api/router"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintln(w, "Book Library API is running")
-}
-
 func main() {
-    http.HandleFunc("/", handler)
-
+    router.Setup()
     fmt.Println("Server running on :8080")
     http.ListenAndServe(":8080", nil)
 }
